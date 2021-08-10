@@ -2,15 +2,15 @@ import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const local = 'http://localhost:5000'
-const global = 'https://simple-express-app-tau.vercel.app/'
+// 'http://localhost:5000'
+// 'https://simple-express-app-tau.vercel.app/'
 
 export default function Home() {
   const [data, setData] = useState('default')
 
   useEffect(() => {
     axios
-    .get(local)
+    .get('https://simple-express-app-tau.vercel.app/)
     .then( res => {
       console.log(res)
       setData(res.data)
