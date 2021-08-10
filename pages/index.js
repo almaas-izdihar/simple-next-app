@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-    .get('https://simple-express-app-tau.vercel.app/)
+    .get('https://simple-express-app-tau.vercel.app/')
     .then( res => {
       console.log(res)
       setData(res.data)
